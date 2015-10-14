@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="3387594605">
+    <data-source source="LOCAL" name="hibernate.cfg.xml" uuid="4cfd7803-ccfe-4799-b497-2f44355819b4">
+      <driver-ref>mysql</driver-ref>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306/toDoStack</jdbc-url>
+      <user-name>museart</user-name>
+      <libraries>
+        <library>
+          <url>file://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/5.1.9/mysql-connector-java-5.1.9.jar</url>
+        </library>
+      </libraries>
+    </data-source>
+  </component>
+</project>
+
