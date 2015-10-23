@@ -55,8 +55,8 @@
       <file leaf-file-name="CalcImplTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/home/service/CalcImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.9803921">
-              <caret line="111" column="6" selection-start-line="111" selection-start-column="6" selection-end-line="111" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.57983196">
+              <caret line="64" column="29" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -692,7 +692,7 @@
       <recent name="service" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CalcImplTest.AnyName">
+  <component name="RunManager" selected="JUnit.CalcImplTest">
     <configuration default="false" name="StoryServiceTest.createOrUpdateStory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -707,32 +707,6 @@
       <option name="MAIN_CLASS_NAME" value="home.service.StoryServiceTest" />
       <option name="METHOD_NAME" value="createOrUpdateStory" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="StoryServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="home.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="ToDoStack" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="home.service" />
-      <option name="MAIN_CLASS_NAME" value="home.service.StoryServiceTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -811,6 +785,32 @@
       <option name="MAIN_CLASS_NAME" value="home.service.CalcImplTest" />
       <option name="METHOD_NAME" value="AnyName" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="CalcImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="home.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="ToDoStack" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="home.service" />
+      <option name="MAIN_CLASS_NAME" value="home.service.CalcImplTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1034,18 +1034,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Maven.Jetty run" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.StoryServiceTest.createOrUpdateStory" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.StoryServiceTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TaskServiceTest.testDelete" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TaskServiceTest.testCreateOrUpdateSaveOrUpdate" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.CalcImplTest.AnyName" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TaskServiceTest.testDelete" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TaskServiceTest.testCreateOrUpdateSaveOrUpdate" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CalcImplTest.AnyName" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.CalcImplTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CalcImplTest.AnyName" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TaskServiceTest.testCreateOrUpdateSaveOrUpdate" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TaskServiceTest.testDelete" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.StoryServiceTest.createOrUpdateStory" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.StoryServiceTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.CalcImplTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CalcImplTest.AnyName" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TaskServiceTest.testCreateOrUpdateSaveOrUpdate" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TaskServiceTest.testDelete" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.StoryServiceTest.createOrUpdateStory" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -1569,8 +1569,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/home/service/CalcImplTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.9803921">
-          <caret line="111" column="6" selection-start-line="111" selection-start-column="6" selection-end-line="111" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.57983196">
+          <caret line="64" column="29" selection-start-line="64" selection-start-column="29" selection-end-line="64" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

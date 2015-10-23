@@ -93,6 +93,13 @@ public class CalcImplTest {
     }
 
     @Test
+    public void devide_test5(){
+    /*
+    * Если а = 0 и б = 3, то результатом деления будет число 0
+    */
+    }
+
+    @Test
     public void mult_test1(){
     /*
     * Если а = 6 и б = 3, то результатом умножения будет число 18
