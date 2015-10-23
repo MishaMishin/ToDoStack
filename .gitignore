@@ -43,5 +43,6 @@ Temporary Items
 .apdisk
 
 #myIgnoreList
-workspace.xml
 
+
+.idea/workspace.xml
