@@ -16,7 +16,7 @@ public class TaskService {
 
     @Autowired private TaskRepository taskRepository;
     @Autowired private StoryRepository storyRepository;
-
+    //TODO WRITE TEST FOR THIS METHOD
     public void createOrUpdate(TaskCommand command) {
         Task task = taskRepository.getById(command.getId());
         if (task == null) {
@@ -43,7 +43,7 @@ public class TaskService {
         command.setCreatedAt(task.getCreatedAt());
         return command;
     }
-
+    //TODO WRITE TEST FOR THIS METHOD
     public void delete(String taskId) {
         Task task = taskRepository.getById(taskId);
         taskRepository.delete(task);
