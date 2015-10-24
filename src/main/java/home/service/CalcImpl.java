@@ -13,7 +13,7 @@ public class CalcImpl {
     }
 
     public double devide(double a, double b){
-        if((a==0) || (b == 0)) return 0;
+        if((b == 0)) throw new ArithmeticException();
         double devide = a/b;
         return devide;
     }
