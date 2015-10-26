@@ -19,6 +19,9 @@ public class TaskRepository {
     }
 
     public Task getById(String id) {
+        if(id==null || id.isEmpty()){
+            return null;
+        }
         Criteria criteria = createCriteria(Task.class);
         criteria.add(Restrictions.eq("id", id));
         return (Task) criteria.uniqueResult();

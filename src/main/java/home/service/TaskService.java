@@ -43,10 +43,13 @@ public class TaskService {
         command.setCreatedAt(task.getCreatedAt());
         return command;
     }
-    //TODO WRITE TEST FOR THIS METHOD
+
     public void delete(String taskId) {
         Task task = taskRepository.getById(taskId);
-        taskRepository.delete(task);
+        if(task != null){
+            taskRepository.delete(task);
+        }
+
     }
 
     public void detachFromCurrentStory(String taskId) {
