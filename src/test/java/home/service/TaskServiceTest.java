@@ -28,13 +28,10 @@ public class TaskServiceTest {
     @Mock StoryRepository storyRepository;
 
     @Test
-    public void createOrUpdateSaveOrUpdate_TaskIsNotNullInRepository_RunRepositorySaveOrUpdateMethod() {
+    public void createOrUpdate_TaskIsNotNullInRepository_RunRepositorySaveOrUpdateMethod() {
         TaskCommand command = new TaskCommand();
         Task task = new Task();
         command.setName("test");
-        task.setName(command.getName());
-        task.setCreatedAt(getInstance());
-        task.setDeadline(getInstance());
         Story testStory = new Story();
         when(taskRepository.getById(command.getId())).thenReturn(task);
         when(storyRepository.getById(command.getStoryId())).thenReturn(testStory);
@@ -42,26 +39,48 @@ public class TaskServiceTest {
         verify(taskRepository).saveOrUpdate(task);
     }
 
-    //Много вопросов
+
     @Test
-    public void createOrUpdateSaveOrUpdate_CommandIsNullInRepository_RunRepositorySaveOrUpdateMethod() {
-        //незнаю как проверить при команде равном null
+    public void createOrUpdate_CheackArgumentForTaskRepositoryGetById(){
+
         TaskCommand command = new TaskCommand();
         Task task = new Task();
         command.setName("test");
-        task.setName(command.getName());
-        task.setCreatedAt(getInstance());
-        task.setDeadline(getInstance());
+        command.setId("15");
         Story testStory = new Story();
-        when(taskRepository.getById(null)).thenReturn(task);
-        when(storyRepository.getById(null)).thenReturn(testStory);
+
         taskService.createOrUpdate(command);
-        verify(taskRepository).saveOrUpdate(task);
+
     }
 
 
     @Test
-    public void createOrUpdateSaveOrUpdate_TaskIsNullInRepository_DoNotRunRepositorySaveOrUpdateMethod() {
+    public void createOrUpdate_InvocationTaskRepository(){
+        TaskCommand command = new TaskCommand();
+        command.setId("15");
+        command.setName("Test");
+        Story story = new Story();
+        when(storyRepository.getById(command.getStoryId())).thenReturn(story);
+        taskService.createOrUpdate(command);
+        verify(taskRepository).getById(command.getId());
+    }
+
+    @Test
+    public void createOrUpdate_IfStoryNull_RunStoryRepositoryGetDefaultStory(){
+        TaskCommand command = new TaskCommand();
+        command.setName("Test");
+        when(storyRepository.getById(command.getStoryId())).thenReturn(null);
+        when(storyRepository.getDefaultStory()).thenReturn(new Story());
+
+        taskService.createOrUpdate(command);
+        verify(storyRepository).getDefaultStory();
+    }
+
+
+
+
+    @Test
+    public void createOrUpdate_TaskIsNullInRepository_DoNotRunRepositorySaveOrUpdateMethod() {
         TaskCommand command = new TaskCommand();
         Task task = null;
         command.setName("test");
@@ -73,7 +92,7 @@ public class TaskServiceTest {
     }
 
     @Test
-    public void createOrUpdateSaveOrUpdate_TaskIsNullInRepository_CheckTaskNameAndCommandName() {
+    public void createOrUpdate_TaskIsNullInRepository_CheckTaskNameAndCommandName() {
         TaskCommand command = new TaskCommand();
         ArgumentCaptor<Task> newName = ArgumentCaptor.forClass(Task.class);
         Task task = new Task();
@@ -124,6 +143,24 @@ public class TaskServiceTest {
         when(taskRepository.getById(taskId)).thenReturn(null);
         taskService.delete(taskId);
         verify(taskRepository, never()).delete(task);
+    }
+
+    @Test
+    public void getCommand_TaskIsNotNullInRepository_RunRepositoryGetByIdMethod(){
+
+        Task task = new Task("gfhfg",Calendar.getInstance());
+        when(taskRepository.getById(task.getId())).thenReturn(task);
+        Story story = new Story();
+        task.setStory(story);
+        TaskCommand command = new TaskCommand();
+        command.setDeadline(task.getDeadline());
+        command.setName(task.getName());
+        command.setStoryId(task.getStory().getId());
+        command.setId(task.getId());
+        command.setCreatedAt(task.getCreatedAt());
+
+        taskService.getCommand(task.getId());
+        verify(taskRepository).getById(task.getId());
     }
 
 
